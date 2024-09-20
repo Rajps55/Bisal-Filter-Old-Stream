@@ -12,7 +12,7 @@ def is_enabled(value, default):
     else:
         return default
 PORT = int(environ.get('PORT', 8000))
-NO_PORT = bool(environ.get('NO_PORT', False))
+NO_PORT = bool(environ.get('NO_PORT', True))
 APP_NAME = None
 if 'DYNO' in environ:
     ON_HEROKU = True
